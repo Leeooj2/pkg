@@ -1,4 +1,4 @@
-module pkg
+module github.com/hololee2cn/pkg
 
 go 1.17
 
