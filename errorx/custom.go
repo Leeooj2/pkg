@@ -10,7 +10,7 @@ import (
 const (
 	XCode    = "x-code"
 	XMsg     = "x-msg"
-	XTraceID = "x-nova-trace-id"
+	XTraceID = "x-trace-id"
 )
 
 type CustomError struct {

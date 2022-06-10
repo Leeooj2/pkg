@@ -22,11 +22,11 @@ func defaultContext(defaultContext context.Context, ctx *gin.Context) (c context
 	c = defaultContext
 	it, b := ctx.Get(GinContextContext)
 	if !b {
-		log.Warnln("nova-context doesn't exists")
+		log.Warnln("context doesn't exists")
 		return
 	}
 	if c, b = it.(context.Context); !b {
-		log.Warnln("invalid nova-context value type")
+		log.Warnln("invalid context value type")
 		c = defaultContext
 		return
 	}
