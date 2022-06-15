@@ -40,7 +40,7 @@ func parseFromINI() (m map[string]string, err error) {
 		log.Error(err)
 		return
 	}
-	confPath := filepath.Join(appPath, "conf", "app.conf")
+	confPath := filepath.Join(appPath, "etc", "app.conf")
 
 	mutex.Lock()
 	defer mutex.Unlock()
