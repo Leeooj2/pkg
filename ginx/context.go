@@ -23,7 +23,6 @@ func defaultContext(defaultContext context.Context, ctx *gin.Context) (c context
 	c = defaultContext
 	it, b := ctx.Get(GinContextContext)
 	if !b {
-		log.Warnln("context doesn't exists")
 		return
 	}
 	if c, b = it.(context.Context); !b {
